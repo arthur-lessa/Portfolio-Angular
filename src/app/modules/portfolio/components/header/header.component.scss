@@ -1,4 +1,45 @@
-.material-icons {
-    font-size: 48px; /* Ajusta o tamanho do ícone */
-    color: #25D366; /* Cor oficial do WhatsApp */
+.header {
+    font-family: "Montserrat", serif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
 }
+
+.grid-1 {
+    border: 1px red solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.photo-title{
+    border: 1px red solid;
+    width: fit-content;
+
+    img {
+        width: 350px;
+        height: 350px;
+        border-radius: 10%;
+    }
+
+    h1{
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+::ng-deep .mat-tooltip {
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+::ng-deep .mat-tooltip-arrow {
+    color: #333;
+}
+
+  
