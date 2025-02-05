@@ -9,5 +9,7 @@ import { MatTooltip, MatTooltipModule } from '@angular/material/tooltip';
 })
 export class HeaderComponent {
 
-  imgSrc = 'assets/img/Arthur2.jpg'
+  imgSrc = 'assets/img/Arthur2.png'
+
+  
 }

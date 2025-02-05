@@ -1,4 +1,9 @@
-.header {
+html{
+    // background: linear-gradient(to right, #171725 0%, #022f56 100%); ;
+}
+
+.header {    
+    background: linear-gradient(to right, #171725 40%, #022f56 100%); ;
     font-family: "Montserrat", serif;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -6,40 +11,84 @@
 }
 
 .grid-1 {
-    border: 1px red solid;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
 }
 
-.photo-title{
-    border: 1px red solid;
-    width: fit-content;
+.photo-title {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.4s ease-in-out;
+    margin-bottom: 10%;
 
     img {
-        width: 350px;
-        height: 350px;
+        width: 90%;
+        height: 90%;
         border-radius: 10%;
     }
 
-    h1{
+    h1 {
+        transition: color 0.4s ease-in-out, font-weight 0.4s ease-in-out;
         text-align: center;
-        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #b4b6bb;
     }
 }
 
-::ng-deep .mat-tooltip {
-    background-color: #333;
-    color: #fff;
-    font-size: 14px;
-    border-radius: 4px;
-    padding: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+.photo-title:hover {
+    transform: scale(1.1);    
+
+    h1{
+        color: #bddae8; 
+        font-weight: bold;
+    }
 }
 
-::ng-deep .mat-tooltip-arrow {
-    color: #333;
+.grid-2{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-  
+.about-me {
+    position: relative;
+    overflow: hidden;
+    background-color: #488db4;
+    border-radius: 15px;
+    width: 70%;
+    height: 55%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.about-me h1 {
+    margin: 10px 20px;
+}
+
+.about-me p {
+    margin: 0 20px;
+}
+
+.about-me:hover {
+    transform: scale(1.1);
+}
+
+// ADICIONAR MEDIA A PARTIR DE 930 - GRID COLUMNS MUDANDO PARA GRID ROWS
+
+// ::ng-deep .mat-tooltip {
+//     background-color: #333;
+//     color: #fff;
+//     font-size: 14px;
+//     border-radius: 4px;
+//     padding: 8px;
+//     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+// }
+
+// ::ng-deep .mat-tooltip-arrow {
+//     color: #333;
+// }
