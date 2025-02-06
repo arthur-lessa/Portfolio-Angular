@@ -1,13 +1,13 @@
-html{
-    // background: linear-gradient(to right, #171725 0%, #022f56 100%); ;
+.welcome{
+    padding: 20px;
+    text-align: center;
+    color: #b6dfe7;
 }
 
-.header {    
-    background: linear-gradient(to right, #171725 30%, #022f56 100%); ;
-    font-family: "Montserrat", serif;
+.grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 100vh;
+    height: 87.5vh;
 }
 
 .grid-1 {
@@ -24,7 +24,7 @@ html{
     align-items: center;
     flex-direction: column;
     transition: transform 0.4s ease-in-out;
-    margin-bottom: 10%;
+    margin-top: 5%;
 
     img {
         width: 90%;
@@ -35,7 +35,7 @@ html{
     h1 {
         transition: color 0.4s ease-in-out, font-weight 0.4s ease-in-out;
         text-align: center;
-        margin-bottom: 20px;
+        margin-top: 15px;
         color: #b4b6bb;
     }
 }
@@ -62,16 +62,19 @@ html{
     background-color: #488db4;
     border-radius: 15px;
     width: 70%;
-    height: 55%;
+    height: 65%;
     transition: transform 0.4s ease-in-out;
 }
 
 .about-me h1 {
+    color: #b6dfe7;
     margin: 10px 20px;
 }
 
 .about-me p {
-    margin: 0 20px;
+    color: #b6dfe7;
+    font-size: 14px;
+    margin: 10px 20px;
 }
 
 .about-me:hover {

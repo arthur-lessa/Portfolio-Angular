@@ -1,25 +1,30 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<header class="header">
-    <div class="grid-1">
-        <div class="photo-title">
-            <h1 class="custom">Arthur Lessa</h1>
-            <img 
-            src="{{ imgSrc }}" 
-            alt="Arthur Lessa - Foto de perfil" 
-            loading="eager">
+<div>
+    <h1 class="welcome">Bem vindo ao meu portfólio!</h1>
+    <div class="grid">
+        <div class="grid-1">
+            <div class="photo-title">
+                <img 
+                src="{{ imgSrc }}" 
+                alt="Arthur Lessa - Foto de perfil" 
+                loading="eager">
+                <h1 class="custom">Arthur Lessa</h1>
+            </div>
+        </div>
+        <div class="grid-2">
+            <div class="about-me">
+                <h1>Sobre mim</h1>
+                <p>{{FirstAboutMeText}}</p>
+                <p>{{SecondAboutMeText}}</p>
+                <p>{{ThirdAboutMeText}}</p>
+            </div>
         </div>
     </div>
-    <div class="grid-2">
-        <div class="about-me">
-            <h1>Sobre mim</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos fugit nobis esse! Esse fugiat, delectus iusto ducimus dolore quasi. Odio atque quo ratione? Maxime quae dignissimos amet aliquam! Porro, autem.</p>
-        </div>
-    </div>
-</header>
+</div>
 
-<aside>
+<!-- <aside>
     <div class="container">
         <p>Frontend | Testes Automatizados PlayWright .NET | Angular | Java | C#</p>
         <p>São Paulo, SP, Brasil</p>
@@ -68,4 +73,4 @@
             </figcaption>
         </figure>
     </section>
-</aside>
+</aside> -->
